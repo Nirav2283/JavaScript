@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern 1</title>
+</head>
+<body>
+    <script>
+        //first pattern 
+        document.write("<h2>Pattern 1</h2>");
+        for(i = 1 ; i <= 5 ; i++){
+            for(j = 1 ; j <= i ; j++){
+                document.write("* ");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        //second pattern
+        document.write("<h2>Pattern 2</h2>");
+        for(i = 1 ; i <= 5 ; i++){
+            for(j = 1 ; j <= i ; j++){
+                document.write(j+" ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br>");
+        document.write("<br>"); 
+
+        //3rd pattern
+        document.write("<h2>Pattern 3</h2>");
+       
+        for(i = 5 ; i >= 1 ; i--){
+            for(j = 1 ; j <= i ; j++){
+                document.write("* ")
+            }
+            document.write("<br>");
+        }
+
+        //4th pattern
+        document.write("<h2>Pattern 4</h2>");
+    
+        for(i=1;i<=5;i++){
+        for(j=1;j<=5;j++){
+            if(i==1||i==5||j==1||j==5){
+                document.write("*&nbsp; &nbsp;");
+            }else{
+                document.write("&nbsp; &nbsp; &nbsp;");
+            }
+            
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("<h2>Pattern 5</h2>");
+
+    for(let i = 1 ; i<=5 ; i++){
+        document.write("<br>")
+        for(let j = 1 ; j<=5 ; j++){
+            document.write("* ")
+        }
+        
+    }
+
+    </script>
+</body>
+</html>

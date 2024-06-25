@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 digit seperate</title>
+</head>
+<body>
+    <script>
+        a = prompt("Enter a 2 digit number: ")
+        b = parseInt(a/10) 
+        c = a%10
+        let ans =  1
+        if(a>=10 && a<=99){
+            document.write("The first digit is: " + b + "<br>")
+            document.write("The second digit is: " + c)
+        }else{
+            alert("invalid number")
+        }
+
+        while(c > 0 || c < 0){
+            ans = ans * b
+            c--
+        }
+        document.write("<br>")
+        document.write("product is: "+ans)
+       
+
+        
+    </script>
+</body>
+</html>

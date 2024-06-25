@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr1 = ["one" , "two" , "three" , "four" , "five" , "six" , "seven" , "eight" , "nine" , "ten"]
+        arr2= ["eleven" , "twelve" , "thirteen" , "fourteen" , "fifteen" , "sixteen" , "seventeen" , "eighteen" , "nineteen"]
+        arr3 =["twenty" , "thirty" , "fourty" , "fifty" ,"sixty" ,"seventy" , "eighty" ,"ninety" ,"hundred"]
+        a =prompt("Enter a number in range 0-999: ")
+        var result = ""
+        if(a>=0 && a < 1000){
+            if(a < 0 || a > 999){
+            alert("out of range")
+        }
+        if(a==0){
+            document.write("Zero");
+            
+        }
+        if(a<=10){
+            result = arr1[a-1]
+            
+            
+        }
+        if(a > 10 && a <= 20){
+            result = arr2[a-11]
+          
+
+        }
+        if(a > 20  && a <= 99){
+            tens = Math.floor(a/10)
+            result += arr3[tens-2]
+            units = a%10
+            result += " "+arr1[units-1]
+            
+        }
+
+        
+        if(a >= 100 && a < 1000){
+            tens2 = Math.floor(a/100)
+            remainder = a % 100
+            result += arr1[tens2-1] + " hundred "
+                    
+        }
+            if(remainder <= 10){
+                result+= " "+ arr1[remainder - 1]
+                
+            }
+            else if(remainder > 10 && remainder <= 20){
+                result += " "+ arr2[remainder-11] 
+
+            }else if(remainder > 20 && remainder <= 99){
+                tens3 = Math.floor(a/10)
+                result += arr3[tens3-2]
+                units2 = remainder % 10;
+                result += " "+arr1[units2 - 1]
+            }
+         
+
+           
+        
+
+        }else{
+            alert("out of range")
+        }
+        document.write(result);
+
+        
+        
+            
+    
+            
+        
+
+    </script>
+</body>
+</html>

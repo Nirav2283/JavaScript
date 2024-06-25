@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxArray</title>
+</head>
+<body>
+    <script>
+                let arr = new Array();
+                var size = parseInt(prompt("Enter size of an array: "))
+                for(let i = 0 ; i < size ; i++){
+                    arr[i]  = parseInt(prompt("enter elements: "));
+                }
+                max = arr[0];
+                for(i = 1 ;  i < size ; i++){
+                    if(arr[i] > max){
+                        max = arr[i]
+                        max = i;
+                    }
+                }
+                document.write(max)
+                
+    </script>
+</body>
+</html>
