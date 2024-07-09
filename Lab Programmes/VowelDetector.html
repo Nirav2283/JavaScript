@@ -18,12 +18,12 @@
     <script>
         document.body.addEventListener('keydown', (e) => {
             if (e.key == 'a' || e.key == 'e' || e.key == 'i' || e.key == 'o' || e.key == 'u'|| e.key == 'A' || e.key == 'E' || e.key == 'I' || e.key == 'O' || e.key == 'U') {
-                document.getElementById('display').innerHTML = e.key + " is Pressed"
+                document.getElementById('display').innerHTML = e.key + " is Pressed (vowel)"
                 document.body.style.backgroundColor = "red"
 
             }
             else {
-                document.getElementById('display').innerHTML = "consonant detected"
+                document.getElementById('display').innerHTML = e.key + " is Pressed"
                 document.body.style.backgroundColor = "green"
 
             }
