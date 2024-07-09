@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color change</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        button{
+            padding: 20%;
+            width: 100%;
+            border: none;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <button id="btn1" onclick="changecolor()">CLICK ME!</button>
+    </div>
+
+    <script>
+        function changecolor(){
+            a = Math.floor(Math.random()*256)
+            b = Math.floor(Math.random()*256)
+            c = Math.floor(Math.random()*256)
+            document.body.style.backgroundColor = "rgb("+a+" , "+b+" , "+c+")"
+        }
+    </script>
+</body>
+</html>
