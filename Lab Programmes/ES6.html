@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>CALLBACK DEMO</h1>
+        <h2 id="display">
+        
+        </h1>
+        <h1>DEFAULT PARAMETER DEMO</h1>
+        <h2 id="display2">
+
+        </h1>
+        <h1>DIFF BETWEEN LET AND VAR</h1>
+            <h3 id="one"></h3>
+            <h3 id="two"></h3>
+            <h3 id="three"></h3>
+
+        <h1>SPREAD OPERATOR</h1>
+        <h3 id="four"></h3>
+        <h3 id="five"></h3>
+
+
+    </div>
+    <script>
+
+        //callback demo
+        function print(x){
+            document.getElementById('display').innerHTML = x
+        }
+        function result(a , b , sum){
+            s = a+b;
+            sum(s);
+        }
+
+        result(10,10,print);
+
+
+        //default parameter demo
+
+        function abc(a = 5 , b = 2){
+            document.getElementById('display2').innerHTML = a+b;
+        }
+
+        abc();
+
+        //diff between let and var
+
+        n = 10;
+        document.getElementById('one').innerHTML = "globalscope: "+n;
+
+        function abcd(){
+            var n = 20;
+            document.getElementById('two').innerHTML = "function scope: "+n;
+            if(true){
+                let n = 30;
+                document.getElementById('three').innerHTML = "block scope: "+n;
+               
+            }
+
+        }
+        abcd();
+
+        // spread operator
+
+        student1 ={
+            name:"nirav",
+            department:"CSE",
+            rollno: "175",
+            sem:3,
+            
+        }
+        
+        document.getElementById('four').innerHTML = student1.name
+
+        student2 = {...student1 , name:"Darshan"}
+        document.getElementById('five').innerHTML = student2.name
+
+    </script>
+
+</body>
+</html>
