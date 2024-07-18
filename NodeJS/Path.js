@@ -11,5 +11,3 @@ console.log(path.basename('/abc'));
 console.log(path.extname('/abc.ac.in'));
 console.log(path.normalize('/abc'));
 
-const fs = require('fs');
-fs.exists()
