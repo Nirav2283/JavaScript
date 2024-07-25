@@ -1,0 +1,461 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            inset: 0;
+        }
+
+        .main {
+            height: 140vh;
+
+
+        }
+
+        .one {
+
+            height: 60%;
+            margin-bottom: 20px;
+        }
+
+        .one img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .two {
+
+            margin-bottom: 40px;
+            height: 6%;
+        }
+
+        .three {
+
+            height: 25%;
+        }
+
+        .paypal {
+            float: left;
+            margin-left: 150px;
+
+            width: 10%;
+            height: 100%;
+
+        }
+
+        .paypal img {
+            width: 100%;
+            height: 80%;
+            opacity: 30%;
+        }
+
+        .google {
+            float: left;
+            margin-left: 100px;
+
+            width: 10%;
+            height: 100%;
+
+        }
+
+        .google img {
+            width: 100%;
+            height: 70%;
+            opacity: 30%;
+            margin-top: 10px;
+        }
+
+        .samsung {
+            float: left;
+            margin-left: 100px;
+
+            width: 10%;
+            height: 100%;
+
+        }
+
+        .samsung img {
+            width: 100%;
+            height: 100%;
+            opacity: 30%;
+        }
+
+        .lenovo {
+            float: left;
+            margin-left: 100px;
+
+            width: 10%;
+            height: 100%;
+
+        }
+
+        .lenovo img {
+            width: 100%;
+            height: 40%;
+            opacity: 30%;
+            margin-top: 18px;
+        }
+
+        .amazon {
+            float: left;
+            margin-left: 100px;
+
+            width: 10%;
+            height: 100%;
+
+        }
+
+        .amazon img {
+            width: 100%;
+            height: 100%;
+            opacity: 30%;
+        }
+
+        .left {
+            float: left;
+            width: 20%;
+
+            height: 100%;
+
+        }
+
+        .left h1 {
+            font-size: 80px;
+            margin-left: 70px;
+            transform: translate(0%, -50%);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .left p {
+            margin-left: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transform: translate(0%, -550%);
+        }
+
+        .right {
+            float: right;
+            width: 78%;
+            height: 100%;
+
+        }
+
+        .right1 {
+            width: 100%;
+            height: 20%;
+            
+            margin-bottom: 10px;
+
+        }
+
+        .right1 h3 {
+            transform: translate(0%, -60%);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .right2 {
+            width: 100%;
+            height: 75%;
+
+        }
+
+        .b1 {
+            float: left;
+            border-radius: 10px;
+            background-color: aliceblue;
+            width: 25%;
+            transition: 0.7s;
+            height: 100%;
+            margin-right: 80px;
+        }
+
+        .b1 img {
+            width: 20%;
+           
+            margin-top: 70px;
+            margin-left: 30px;
+        }
+
+        .b2 img {
+            width: 20%;
+            margin-top: 70px;
+            margin-left: 30px;
+        }
+
+        .b1 p {
+            margin-left: 30px;
+        }
+
+        .b2 p {
+            margin-left: 30px;
+        }
+
+        .b3 img {
+            width: 20%;
+            margin-top: 70px;
+            margin-left: 30px;
+        }
+
+        .b3 p {
+            margin-left: 30px;
+        }
+
+        .b2 {
+            float: left;
+            background-color: aliceblue;
+            transition: 0.7s;
+            width: 25%;
+            border-radius: 10px;
+            margin-right: 80px;
+            height: 100%;
+        }
+
+        .b3 {
+            float: left;
+            transition: 0.7s;
+            width: 25%;
+            border-radius: 10px;
+            background-color: aliceblue;
+            height: 100%;
+            margin-right: 80px;
+        }
+
+        .b1:hover {
+            scale:1.1;
+            transition: 0.7s;
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 3px red;
+        }
+
+        .b2:hover {
+            scale:1.1;
+            color: white;
+            background-color: black;
+            transition: 0.7s;
+            box-shadow: 2px 2px 3px red;
+        }
+
+        .b3:hover {
+            scale:1.1;
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 3px red;
+            transition: 0.8Fs;
+        }
+        .right2 img{
+            transition: scale 350ms ease opacity 350ms linear;
+        }
+        .right2:has(.b1:hover) .b2:not(:hover) {
+            scale: 0.8;
+            opacity: 0.5;
+        }
+        .right2:has(.b1:hover) .b3:not(:hover) {
+            scale: 0.8;
+            opacity: 0.5;
+        }
+        .right2:has(.b2:hover) .b1:not(:hover) {
+            scale: 0.8;
+            opacity: 0.5;
+        }
+        .right2:has(.b2:hover) .b3:not(:hover) {
+            scale: 0.8;
+            opacity: 0.5;
+        }
+        .right2:has(.b3:hover) .b2:not(:hover) {
+            scale: 0.8;
+            opacity: 0.5;
+        }
+        .right2:has(.b3:hover) .b1:not(:hover) {
+            scale: 0.8;
+            opacity: 0.5;
+        }
+        .b1 .tooltip{
+            visibility: hidden;
+            transform: translate(-20%);
+        }
+        .b1:hover .tooltip{
+            visibility: visible;
+        }
+        .new{
+            height: 5%;
+            transform: translate(0% , -1150%);
+           
+        }
+        .new img{
+            width:3.50%;
+            float:left;
+            margin-left:30px;
+           
+            
+        }
+        .content{
+            float:left;
+          
+            width:40%;
+            margin-left:210px;
+        }
+        .content label{
+            margin-left:35px;
+            font-size:20px;
+            transition: 0.7s;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        label:hover{
+            color:rgb(237, 82, 82);
+            transition: 0.4s;
+        }
+        .abc{
+            float: right;
+            
+            width: 40%;
+            
+            
+        }
+        .abc input{
+           border-top-left-radius: 30px;
+           border-bottom-left-radius: 30px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            border:none;
+            padding-left:10px;
+           
+        }
+       
+        .abc button{
+            padding-top:10px;
+            padding-bottom:10px;
+            transition: 0.7s;
+            background-color: rgb(237, 82, 82);
+            border:none;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            width:15%;
+            color:white;
+        }
+        .about{
+           
+            width: 95%;
+            position: absolute;
+            
+            padding-left:30px;
+            height: 30%;
+            margin-top:200px;
+            
+        }
+        .about button{
+            padding-top:15px;
+            padding-bottom:15px;
+            transition: 0.7s;
+            width:10%;
+            border:none;
+            border-radius: 30px;
+            color:white;
+            background-color: rgb(237, 82, 82);;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+
+        }
+        button:hover{
+            background-color:rgb(31, 45, 202);
+            transition: 0.7s;
+            scale:1.1;
+        }
+        a{
+            margin-right: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+
+        }
+        a:hover{
+            color: brown;
+        }
+       
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="one">
+            <img src="background.jpg">
+        </div>
+        <div class="new">
+           <img src="DU.jpeg">
+           <div class="content">
+             <a href = home>Home</label>
+             <a href = about>My intro</label>
+             <a href = service>Services</label>
+             <a href = pages>Pages</label>
+             <a href = contact>Contact</a>
+           </div>
+           <div class="abc" >
+                <input type="text" placeholder="Enter Keyword..">
+                <button>Search</button>
+           </div>
+        </div>
+        <div class="about">
+            <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Hi I'm Mary Ateer</h3>
+            <h1 style="font-size: 50px; transform: translate(0% , -40%); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">DESIGNER</h1>
+            <p style="transform: translate(0% , -140%); color: gray;">I love to Work in UI/UX designing. I always try my best to make </p>
+            <p style="transform: translate(0% , -190%); color:gray;">good UI with the best UX.</p>
+            <button>Hire Me</button>
+        </div>
+        <div class="two">
+            <div class="paypal">
+                <img src="paypal.png">
+            </div>
+            <div class="google">
+                <img src="google.png">
+            </div>
+            <div class="samsung">
+                <img src="samsung.png">
+            </div>
+            <div class="lenovo">
+                <img src="lenovo.png">
+            </div>
+            <div class="amazon">
+                <img src="amazon.png">
+            </div>
+        </div>
+        <div class="three">
+            <div class="left">
+                <h1>22</h1>
+                <p>years of Experience</p>
+                <p style="transform: translate(0% , -640%);">working</p>
+            </div>
+            <div class="right">
+                <div class="right1">
+                    <h3>I'm a designer & developer with a passion for</h3>
+                    <h3 style="transform: translate(0% , -150%)">Web Design</h3>
+                </div>
+                <div class="right2">
+                    <div class="b1">
+                        <img src="bulb.png">
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            Creative Design</p>
+                           
+                    </div>
+                    <div class="b2">
+                        <img src="laptop.png">
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Web
+                            Design</p>
+                    </div>
+                    <div class="b3">
+                        <img src="telegram.png">
+                        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Brand
+                            Identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
