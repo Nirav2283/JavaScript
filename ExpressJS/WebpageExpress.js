@@ -22,13 +22,6 @@ app.get('/contact' , (req,res)=>{
 app.get('/service' , (req,res)=>{
     res.send("Service");
 })
-
-
-
-
-
-
-
 app.listen(3000, ()=>{
     console.log("Started");
 })
