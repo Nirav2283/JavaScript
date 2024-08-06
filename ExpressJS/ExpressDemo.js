@@ -8,7 +8,6 @@ app.get('/' , (req,res)=>{
 
 app.post('/' , (req,res)=>{
     res.send('hello world from post');
-
 })
 
 app.listen(3000, ()=>{
