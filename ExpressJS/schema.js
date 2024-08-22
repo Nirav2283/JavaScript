@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const schema = mongoose.Schema({
-    FacultyID: Number,
-    FacultyNumber: String,
-    FacultyInitial: String,
+    Name:String,
+    id:Number,
+    age:Number,
+    subject:String
 })
 
 module.exports = mongoose.model("Faculty" , schema);
